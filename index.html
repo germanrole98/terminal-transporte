@@ -3,59 +3,100 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Terminal de Transporte</title>
   </head>
   <body>
-    <nav>
+    <nav class="navegacion">
       <h1>Terminal de Transporte</h1>
       <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="empresas.html">Empresas</a></li>
-        <li><a href="vehiculos.html">Vehículos</a></li>
-        <li><a href="rutas.html">Rutas</a></li>
-        <li><a href="cotizacion.html">Cotización</a></li>
-        <li><a href="compra.html">Compra tu Ticket</a></li>
+        <li>
+          <a href="index.html"><button>Inicio</button></a>
+        </li>
+        <li>
+          <a href="cotizacion.html"><button>Cotización</button></a>
+        </li>
+        <li>
+          <a href="compra.html"><button>Compra tu Ticket</button></a>
+        </li>
       </ul>
     </nav>
 
     <main>
-      <h2>Tu viaje comienza aquí</h2>
-      <p>
-        Bienvenido a la Terminal de Transporte. Aquí encontrará toda la
-        información necesaria para planificar su viaje, incluyendo empresas de
-        transporte, vehículos disponibles, rutas, horarios, costos y más.
-      </p>
-      <p>
-        Utilice el menú de navegación para explorar las diferentes secciones y
-        obtener detalles sobre nuestros servicios.
-      </p>
-      <section>
-        <h2>Ubicación</h2>
-        <p>Calle 123 #45-67, Ciudad, Departamento</p>
+      <div class="introduccion">
+        <h2>Tu viaje comienza aquí</h2>
+        <p>
+          Bienvenido a la Terminal de Transporte. Aquí encontrará toda la
+          información necesaria para planificar su viaje, incluyendo empresas de
+          transporte, vehículos disponibles, rutas, horarios, costos y más.
+        </p>
+        <p>
+          Utilice el menú de navegación para explorar las diferentes secciones y
+          obtener detalles sobre nuestros servicios.
+        </p>
+      </div>
 
-        <h2>Teléfonos de contacto</h2>
-        <ul>
-          <li>+57 300 123 4567</li>
-          <li>+57 1 234 5678</li>
-        </ul>
+      <div class="iconos-container">
+        <a href="rutas.html">
+          <div class="iconos">
+            <img src="iconos/ruta.svg" alt="Icono de rutas" />
+            <h3>Rutas</h3>
+          </div>
+        </a>
 
-        <h2>Horarios de atención</h2>
-        <p>Lunes a domingo: 5:00 a.m. – 10:00 p.m.</p>
+        <a href="empresas.html">
+          <div class="iconos">
+            <img src="iconos/empresas.svg" alt="Icono de empresas" />
+            <h3>Empresas</h3>
+          </div>
+        </a>
+        <a href="vehiculos.html">
+          <div class="iconos">
+            <img src="iconos/bus.svg" alt="Icono de vehículos" />
+            <h3>Vehículos</h3>
+          </div>
+        </a>
+      </div>
 
-        <h2>Servicios disponibles</h2>
-        <ul>
-          <li>Wi-Fi gratuito</li>
-          <li>Guarda equipaje</li>
-          <li>Restaurantes y cafeterías</li>
-          <li>Atención al viajero</li>
-        </ul>
+      <section class="container-info">
+        <div class="info-terminal">
+          <img src="iconos/ubicacion.svg" alt="Icono de ubicación"/>
+          <h4>Ubicación</h4>
+          <p>Calle 123 #45-67, Ciudad, Departamento</p>
+        </div>
+
+        <div class="info-terminal">
+          <img src="iconos/reloj.svg" alt="Icono de reloj"/>
+          <h4>Horarios de atención</h4>
+          <p>Lunes a domingo: 5:00 a.m. – 10:00 p.m.</p>
+        </div>
+
+        <div class="info-terminal">
+          <img src="iconos/telefono.svg" alt="Icono de teléfono"/>
+          <h4>Teléfonos de contacto</h4>
+          <ul>
+            <li>+57 300 123 4567</li>
+            <li>+57 1 234 5678</li>
+          </ul>
+        </div>
+
+        <div class="info-terminal">
+          <img src="iconos/servicio.svg" alt="Icono de servicios"/>
+          <h4>Servicios disponibles</h4>
+          <ul>
+            <li>Wi-Fi gratuito</li>
+            <li>Guarda equipaje</li>
+            <li>Restaurantes y cafeterías</li>
+            <li>Atención al viajero</li>
+          </ul>
+        </div>
       </section>
     </main>
 
     <footer>
       <p>
-        &copy; 2025 Terminal de Transporte | Dirección: Calle 123 #45-67 | Tel: +57 300 123
-        4567
+        &copy; 2025 Terminal de Transporte | Dirección: Calle 123 #45-67 | Tel:
+        +57 300 123 4567
       </p>
       <p>Horario de atención: Lunes a domingo, 5:00 a.m. a 10:00 p.m.</p>
     </footer>

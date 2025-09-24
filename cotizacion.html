@@ -3,24 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Terminal de Transporte</title>
   </head>
   <body>
-    <nav>
+    <nav class="navegacion">
       <h1>Terminal de Transporte</h1>
       <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="empresas.html">Empresas</a></li>
-        <li><a href="vehiculos.html">Vehículos</a></li>
-        <li><a href="rutas.html">Rutas</a></li>
-        <li><a href="cotizacion.html">Cotización</a></li>
-        <li><a href="compra.html">Compra tu Ticket</a></li>
+        <li>
+          <a href="index.html"><button>Inicio</button></a>
+        </li>
+        <li>
+          <a href="cotizacion.html"><button>Cotización</button></a>
+        </li>
+        <li>
+          <a href="compra.html"><button>Compra tu Ticket</button></a>
+        </li>
       </ul>
     </nav>
 
     <main>
       <h2>Calcula tu cotización</h2>
       <form>
+        <label for="tipo">Tipo de vehiculo</label>
+        <select name="tipo" id="tipo">
+          <option value="microbus">Microbús (12 pasajeros)</option>
+          <option value="bus-intermunicipal">Bus intermunicipal (40 pasajeros)</option>
+          <option value="bus-turistico">Bus de servicio turístico (60 pasajeros)</option>
+          <option value="bus-ejecutivo">Bus de servicio ejecutivo (30 pasajeros)</option>
+        </select>
         <label for="ruta">Ruta</label>
         <select id="ruta" name="ruta">
           <option value="bogota-girardot">Bogotá – Girardot</option>
@@ -37,6 +48,14 @@
 
         <button type="submit">Calcular costo</button>
       </form>
+
+      <div id="resultado">
+        <div>
+          <h3>Costo estimado: $0</h3>
+        </div>
+        <a href="compra.html"><button>Compra Ticket</button></a>
+      </div>
+
     </main>
 
     <footer>
