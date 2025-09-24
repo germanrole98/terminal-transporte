@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terminal de Transporte</title>
+  </head>
+  <body>
+    <nav>
+      <h1>Terminal de Transporte</h1>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="empresas.html">Empresas</a></li>
+        <li><a href="vehiculos.html">Vehículos</a></li>
+        <li><a href="rutas.html">Rutas</a></li>
+        <li><a href="cotizacion.html">Cotización</a></li>
+        <li><a href="compra.html">Compra tu Ticket</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Compra tu tiquete</h2>
+      <form>
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" />
+
+        <label for="ruta">Ruta</label>
+        <select id="ruta" name="ruta">
+          <option value="bogota-girardot">Bogotá – Girardot</option>
+          <option value="ibague-neiva">Ibagué – Neiva</option>
+          <option value="cali-popayan">Cali – Popayán</option>
+          <option value="medellin-manizales">Medellín – Manizales</option>
+          <option value="barranquilla-cartagena">
+            Barranquilla – Cartagena
+          </option>
+          <option value="bucaramanga-cucuta">Bucaramanga – Cúcuta</option>
+          <option value="pasto-tumaco">Pasto – Tumaco</option>
+        </select>
+
+        <label for="cantidad">Cantidad de tiquetes</label>
+        <input type="number" id="cantidad" name="cantidad" min="1" />
+
+        <label for="pago">Método de pago</label>
+        <select id="pago" name="pago">
+          <option value="efectivo">PSE</option>
+          <option value="tarjeta">Tarjeta de crédito</option>
+          <option value="nequi">Nequi</option>
+          <option value="daviplata">Daviplata</option>
+        </select>
+
+        <button type="submit">Comprar</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>
+        Terminal de Transporte | Dirección: Calle 123 #45-67 | Tel: +57 300 123
+        4567
+      </p>
+      <p>Horario de atención: Lunes a domingo, 5:00 a.m. a 10:00 p.m.</p>
+    </footer>
+  </body>
+</html>
