@@ -1,4 +1,3 @@
-/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
@@ -259,15 +258,117 @@ footer {
 }
 
 
+
+
+@media (max-width: 900px) {
+    main {
+        margin: 20px auto;
+        padding: 0 16px;
+    }
+
+    .navegacion h1 {
+        font-size: 1.8rem;
+    }
+    .navegacion ul {
+        gap: 6px;
+    }
+
+    .iconos-container {
+        gap: 12px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .iconos img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .container-info {
+        justify-content: center;
+    }
+
+    .info-empresa {
+        flex: 1 1 45%;
+        max-width: 45%;
+        min-width: 200px;
+    }
+    .info-empresa img {
+        width: 100%;
+        height: auto;
+        max-height: 150px;
+        object-fit: cover;
+    }
+
+    .cotizacion {
+        margin: 30px 16px;
+    }
+}
+
+
 @media (max-width: 600px) {
     main {
         padding: 15px;
+        margin: 15px auto;
     }
-    header h1 {
+
+    .navegacion {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navegacion h1 {
         font-size: 1.3rem;
+        margin-bottom: 10px;
     }
-    nav a {
-        margin: 0 8px;
-        font-size: 0.95rem;
+    .navegacion ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 8px;
+    }
+    .navegacion ul li button {
+        width: 100%;
+    }
+
+    .iconos-container {
+        justify-content: center;
+        gap: 10px;
+    }
+    .iconos img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .container-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-terminal {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .ruta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .container-empresas {
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-empresa {
+        max-width: 100%;
+    }
+
+    .cotizacion {
+        margin: 20px 12px;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.2rem;
     }
 }
