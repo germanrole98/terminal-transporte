@@ -14,6 +14,15 @@
           <a href="index.html"><button>Inicio</button></a>
         </li>
         <li>
+          <a href="rutas.html"><button>Rutas</button></a>
+        </li>
+        <li>
+          <a href="empresas.html"><button>Empresas</button></a>
+        </li>
+        <li>
+          <a href="vehiculos.html"><button>Vehículos</button></a>
+        </li>
+        <li>
           <a href="cotizacion.html"><button>Cotización</button></a>
         </li>
         <li>
@@ -22,46 +31,55 @@
       </ul>
     </nav>
 
-    <main>
-      <h2>Calcula tu cotización</h2>
-      <form>
-        <label for="tipo">Tipo de vehiculo</label>
-        <select name="tipo" id="tipo">
-          <option value="microbus">Microbús (12 pasajeros)</option>
-          <option value="bus-intermunicipal">Bus intermunicipal (40 pasajeros)</option>
-          <option value="bus-turistico">Bus de servicio turístico (60 pasajeros)</option>
-          <option value="bus-ejecutivo">Bus de servicio ejecutivo (30 pasajeros)</option>
-        </select>
-        <label for="ruta">Ruta</label>
-        <select id="ruta" name="ruta">
-          <option value="bogota-girardot">Bogotá – Girardot</option>
-          <option value="ibague-neiva">Ibagué – Neiva</option>
-          <option value="cali-popayan">Cali – Popayán</option>
-          <option value="medellin-manizales">Medellín – Manizales</option>
-          <option value="barranquilla-cartagena">Barranquilla – Cartagena</option>
-          <option value="bucaramanga-cucuta">Bucaramanga – Cúcuta</option>
-          <option value="pasto-tumaco">Pasto – Tumaco</option>
-        </select>
+    <main class="main-cotizacion">
+      <div class="cotizacion">
+        <h2>Calcula tu cotización</h2>
+        <form>
+          <label for="tipo">Tipo de vehiculo</label>
+          <select name="tipo" id="tipo">
+            <option value="microbus">Microbús (12 pasajeros)</option>
+            <option value="bus-intermunicipal">
+              Bus intermunicipal (40 pasajeros)
+            </option>
+            <option value="bus-turistico">
+              Bus de servicio turístico (60 pasajeros)
+            </option>
+            <option value="bus-ejecutivo">
+              Bus de servicio ejecutivo (30 pasajeros)
+            </option>
+          </select>
+          <label for="ruta">Ruta</label>
+          <select id="ruta" name="ruta">
+            <option value="bogota-girardot">Bogotá – Girardot</option>
+            <option value="ibague-neiva">Ibagué – Neiva</option>
+            <option value="cali-popayan">Cali – Popayán</option>
+            <option value="medellin-manizales">Medellín – Manizales</option>
+            <option value="barranquilla-cartagena">
+              Barranquilla – Cartagena
+            </option>
+            <option value="bucaramanga-cucuta">Bucaramanga – Cúcuta</option>
+            <option value="pasto-tumaco">Pasto – Tumaco</option>
+          </select>
 
-        <label for="personas">Cantidad de personas</label>
-        <input type="number" id="personas" name="personas" min="1" />
+          <label for="personas">Cantidad de personas</label>
+          <input type="number" id="personas" name="personas" min="1" />
 
-        <button type="submit">Calcular costo</button>
-      </form>
+          <button type="submit">Calcular costo</button>
+        </form>
 
-      <div id="resultado">
-        <div>
-          <h3>Costo estimado: $0</h3>
+        <div id="resultado">
+          <div>
+            <h3>Costo estimado: $0</h3>
+          </div>
+          <a href="compra.html"><button>Compra Ticket</button></a>
         </div>
-        <a href="compra.html"><button>Compra Ticket</button></a>
       </div>
-
     </main>
 
     <footer>
       <p>
-        &copy; 2025 Terminal de Transporte | Dirección: Calle 123 #45-67 | Tel: +57 300 123
-        4567
+        &copy; 2025 Terminal de Transporte | Dirección: Calle 123 #45-67 | Tel:
+        +57 300 123 4567
       </p>
       <p>Horario de atención: Lunes a domingo, 5:00 a.m. a 10:00 p.m.</p>
     </footer>
