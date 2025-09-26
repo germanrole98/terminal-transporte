@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Terminal de Transporte</title>
+    <script src="js/compra.js"></script>
   </head>
   <body>
     <nav class="navegacion">
@@ -34,12 +35,12 @@
     <main>
       <div class="cotizacion">
       <h2>Compra tu tiquete</h2>
-      <form>
+      <form id="formulario-compra">
         <label for="nombre">Nombre completo</label>
-        <input type="text" id="nombre" name="nombre" />
+        <input type="text" id="nombre" name="nombre" required/>
 
         <label for="ruta">Ruta</label>
-        <select id="ruta" name="ruta">
+        <select id="ruta" name="ruta" required>
           <option value="bogota-girardot">Bogotá – Girardot</option>
           <option value="ibague-neiva">Ibagué – Neiva</option>
           <option value="cali-popayan">Cali – Popayán</option>
@@ -52,10 +53,10 @@
         </select>
 
         <label for="cantidad">Cantidad de tiquetes</label>
-        <input type="number" id="cantidad" name="cantidad" min="1" />
+        <input type="number" id="cantidad" name="cantidad" min="1" required/>
 
         <label for="pago">Método de pago</label>
-        <select id="pago" name="pago">
+        <select id="pago" name="pago" required>
           <option value="efectivo">PSE</option>
           <option value="tarjeta">Tarjeta de crédito</option>
           <option value="nequi">Nequi</option>
