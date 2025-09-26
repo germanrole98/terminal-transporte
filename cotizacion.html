@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Terminal de Transporte</title>
+    <script src="js/cotizacion.js"></script>
   </head>
+
   <body>
     <nav class="navegacion">
       <h1>Terminal de Transporte</h1>
@@ -34,9 +36,9 @@
     <main class="main-cotizacion">
       <div class="cotizacion">
         <h2>Calcula tu cotización</h2>
-        <form>
+        <form id="formulario-cotizacion">
           <label for="tipo">Tipo de vehiculo</label>
-          <select name="tipo" id="tipo">
+          <select name="tipo" id="tipo" required>
             <option value="microbus">Microbús (12 pasajeros)</option>
             <option value="bus-intermunicipal">
               Bus intermunicipal (40 pasajeros)
@@ -49,7 +51,7 @@
             </option>
           </select>
           <label for="ruta">Ruta</label>
-          <select id="ruta" name="ruta">
+          <select id="ruta" name="ruta" required>
             <option value="bogota-girardot">Bogotá – Girardot</option>
             <option value="ibague-neiva">Ibagué – Neiva</option>
             <option value="cali-popayan">Cali – Popayán</option>
@@ -62,16 +64,14 @@
           </select>
 
           <label for="personas">Cantidad de personas</label>
-          <input type="number" id="personas" name="personas" min="1" />
+          <input type="number" id="personas" name="personas" min="1" required />
 
           <button type="submit">Calcular costo</button>
         </form>
-
         <div id="resultado">
           <div>
-            <h3>Costo estimado: $0</h3>
+            <h3 id="resultado-cotizacion">Costo estimado: $0</h3>
           </div>
-          <a href="compra.html"><button>Compra Ticket</button></a>
         </div>
       </div>
     </main>
