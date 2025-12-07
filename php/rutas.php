@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/styles.css" /> 
-    <title>Terminal de Transporte - Rutas</title>
+
+    <title>Todas las Rutas y Destinos</title>
+    <meta name="description" content="Explora todas las rutas de transporte disponibles desde nuestra terminal. 
+    Encuentra destinos, horarios y precios para planificar tu viaje con facilidad.">
+    
   </head>
   <body>
 

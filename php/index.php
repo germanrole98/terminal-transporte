@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/styles.css" />
-    <title>Terminal de Transporte</title>
+    
+    <title>Terminal de Transporte: Rutas, Horarios y Tiquetes Online</title>
+    <meta name="description" content="Consulta y compra tiquetes de bus al mejor precio. Verifica rutas, horarios y disponibilidad de todas las empresas de transporte. ¡Viaja seguro y rápido!">
+
   </head>
   <body>
     

@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/styles.css" />
-    <title>Terminal de Transporte - Vehículos</title>
+
+  
+    <title>Flota de Buses</title>
+    <meta name="description" content="Explora nuestra variedad de vehículos diseñados para adaptarse a cada necesidad de transporte. 
+    Desde opciones compactas hasta buses de alta capacidad, elige el tipo ideal y solicita tu cotización
+    personalizada con un solo clic.">
+
   </head>
   <body>
 

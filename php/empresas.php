@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/styles.css" />
-    <title>Terminal de Transporte</title>
+
+    <title>Empresas de Buses</title>
+    <meta name="description" content="Conoce las principales empresas de transporte que operan en nuestra terminal. 
+    Encuentra información de contacto y servicios ofrecidos por cada empresa.">
+    
   </head>
   <body>
 

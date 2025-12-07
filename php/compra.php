@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/styles.css" />
-    <title>Terminal de Transporte</title>
+    
+    <title>Pago Seguro y Compra de Tiquetes de Bus Online</title>
+    <meta name="description" content="Compra tus tiquetes de bus de forma segura y rápida. Elige tu ruta, cantidad de tiquetes y método de pago preferido. ¡Viaja con confianza!">
+    
     <script src="js/compra.js"></script>
   </head>
   <body>

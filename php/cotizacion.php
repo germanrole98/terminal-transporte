@@ -27,7 +27,11 @@ try {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/styles.css" />
-    <title>Terminal de Transporte</title>
+    <title>Cotización de Transporte</title>
+    
+    <meta name="description" content="Calcula el costo estimado de tu viaje en bus según el tipo de vehículo, ruta y número de personas. 
+    Obtén tu cotización rápida y fácilmente.">
+
     <script src="js/cotizacion.js"></script> 
   </head>
 
