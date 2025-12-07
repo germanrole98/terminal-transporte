@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+h1,
+h3 {
+    color: #333;
+    border-bottom: 2px solid #ff751f;
+    padding-bottom: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #ff751f;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+form {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    margin-bottom: 10px;
+    width: 95%;
+    /* Usar ancho relativo */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #ff751f;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff751f;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.success {
+    color: green;
+    font-weight: bold;
+}
+
+/* --- Estilos para el Layout General (Sidebar) --- */
+
+/* Contenedor principal para el layout de dos columnas */
+.admin-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+.admin-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fff;
+    margin-left: 250px;
+    width: auto;
+}
+
+/* --- Estilos para el Sidebar Vertical --- */
+
+.admin-sidebar {
+    width: 250px;
+    position: fixed; /* Lo fija al lado izquierdo */
+    height: 100%;
+    background-color: #c8c8c8; /* Fondo oscuro */
+    color: white;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 0 15px;
+    border-bottom: 1px solid #4a6279;
+    padding-bottom: 15px;
+}
+
+.sidebar-header h2 {
+    color: black;
+    font-size: 1.4em;
+    margin: 0;
+    border-bottom: none;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-nav li a {
+    display: block;
+    padding: 15px 20px;
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.2s;
+}
+
+.sidebar-nav li a:hover {
+    background-color: #2c3e50;
+}
+
+.sidebar-nav li.separator {
+    height: 1px;
+    background-color: #4a6279;
+    margin: 10px 0;
+}
